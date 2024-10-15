@@ -104,4 +104,24 @@
     padding:4px 8px;
     cursor: pointer;
 }
+    .actions{
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+    }
 
+    .action-btn{
+        font-size: 2.2rem;
+        color:#161823;
+        background-color: white;
+        padding: 4px 16px  ;
+        margin-bottom: - 1px;
+    }
+    .user-avatar{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-left: 12px;
+        object-fit: cover;
+        cursor: pointer ;
+    }
