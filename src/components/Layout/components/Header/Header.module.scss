@@ -17,9 +17,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.logo {
-   
-}
+
 .search , .search-result {
     width: 361px;
 }
@@ -97,3 +95,11 @@
     transform: translateY(-50%);
     color: rgba(22, 24, 35, 0.34);
 }
+
+.more-btn{
+    font-size: 2rem;
+    margin-left: 28px;
+    background-color: transparent;
+    padding:4px 8px;
+}
+

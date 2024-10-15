@@ -2,11 +2,13 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap';
 
 :root{
-   --primary-color: #fe2c55;
-   --black: #000;
-   --text-color: #333;
-   --white: #fff;
+    
+    --primary: #fe2c55;
+    --black: #000;
+    --white: #fff;
+    --text-color: #333;
    //default layout  
+   
    --default-header-height: 60px;
    --default-header-width: 1150px;
 }
@@ -17,7 +19,7 @@
     box-sizing: border-box;
 }
 
-:html{
+html{
     font-size: 62.5%;
 }
 

@@ -1,11 +1,12 @@
 .wrapper {
+    height: 75%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-width: 100px;
     padding: 9px 16px;
     border-radius: 4px;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 700;
     cursor: pointer;
     background-color: var(--white);
@@ -37,6 +38,7 @@
     color: var(--white);
     background-color: var(--primary);
     border-color: var(--primary);
+    border-radius: 999px;
     &:hover {
         border-color: var(--primary);
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
@@ -64,4 +66,9 @@
 .large {
     padding: 14px 16px;
     min-width: 140px;
+}
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
 }
