@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Tippy from "@tippyjs/react/headless";
 import classNames from "classnames/bind";
-import React, { useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 
 import Button from "~/components/Button";
 import styles from "./Header.module.scss";
@@ -24,6 +24,26 @@ const MENU_ITEMS = [
   {
       icon: <FontAwesomeIcon icon={faEarthAsia} />,
       title: 'English',
+      Children: {
+        title: 'Language',
+        data : [
+          {
+            type: 'language',
+            code: 'en',
+            title: 'English'
+          },
+          {
+            type: 'language',
+            code: 'Vie',
+            title: 'Tiếng Việt'
+          },
+          {
+            type: 'language',
+            code: 'US',
+            title: 'United States'
+          }
+        ]
+      }
   },
   {
       icon: <FontAwesomeIcon icon={faCircleQuestion} />,
@@ -43,6 +63,18 @@ function Header() {
       setSearchResult([]);
     }, 2000);
   }, []);
+
+
+  const handleChangMenu = (item) => {
+    switch (item.type) {
+      case 'language':
+        console.log('Change language', item.code , item.title);
+        break;
+      default:
+        console.log('Change menu', item);
+        break;
+    }
+  }
 
   return (
     <header className={cx("wrapper")}>
@@ -76,6 +108,7 @@ function Header() {
           <Button primary>Log in</Button>
           <Menu
             items={MENU_ITEMS}
+            onChange={handleChangMenu}
           >
             <button className={cx("more-btn")}>
               <FontAwesomeIcon icon={faEllipsisVertical} />

@@ -5,6 +5,7 @@
     align-items: center;
 }
 .container {
+    padding: 0 var(--default-header-herizontal-spacer);
     width: var(--default-header-width);
     display: flex;   
 }
