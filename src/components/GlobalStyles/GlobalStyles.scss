@@ -1,5 +1,4 @@
 @import "normalize.css";
-@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap";
 
 :root {
   --primary: #fe2c55;
@@ -12,6 +11,33 @@
   --default-header-width: 1150px;
   --default-header-horizontal-spacer: 24px;
 }
+// font embedd
+  @font-face {
+    font-family: "TikTokFontDiplay";
+    src: url('/assets/fonts/TikTokDisplayFont-Bold.woff2') ;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "TikTokFont";
+    src: url('/assets/fonts/TikTokFont-Bold.woff2') ;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "TikTokFont";
+    src: url('/assets/fonts/TikTokDisplayFont-Semibold.woff2') ;
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "TikTokFont";
+    src: url('/assets/fonts/TikTokFont-Regular.woff2') ;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "TikTokFont";
+    src: url('/assets/fonts/TikTokFont-Bold.woff2') ;
+    font-weight: 700;
+  }
+  
 
 * {
   margin: 0;
@@ -24,7 +50,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "TikTokFontDisplay", sans-serif;
   font-size: 1.6rem;
   color: var(--text-color);
 }
