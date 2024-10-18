@@ -9,7 +9,7 @@ import styles from './Menu.module.scss';
 const cx = classNames.bind(styles);
 const defaultFn = () => {};
 
-function Menu({ children, items = [] ,onChange = defaultFn}) {
+function Menu({ children, items = [] ,onChange = defaultFn, hideOnClick = false }) {
 
     const [history, setHistory] = useState([{ data: items }]);
     const current = history[history.length - 1];
@@ -37,7 +37,8 @@ function Menu({ children, items = [] ,onChange = defaultFn}) {
         <Tippy
             interactive
             delay={[0, 700]}
-            offset={[12, 8]}    
+            offset={[12, 8]}  
+            hideOnClick={hideOnClick}  
             placement="bottom-end"
             render={(attrs) => (
                 <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
