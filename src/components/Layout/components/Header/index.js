@@ -41,6 +41,77 @@ const MENU_ITEMS = [
           code: "vi",
           title: "Tiếng Việt",
         },
+        {
+          type: "language",
+          code: "ja",
+          title: "日本語",
+        },
+        {
+          type: "language",
+          code: "ko",
+          title: "한국어",
+        },
+        {
+          type: "language",
+          code: "zh",
+          title: "中文",
+        },
+        {
+          type: "language",
+          code: "es",
+          title: "Español",
+        },
+        {
+          type: "language",
+          code: "fr",
+          title: "Français",
+        },
+        {
+          type: "language",
+          code: "de",
+          title: "Deutsch",
+        },
+        {
+          type: "language",
+          code: "en",
+          title: "English",
+        },
+        {
+          type: "language",
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          type: "language",
+          code: "ja",
+          title: "日本語",
+        },
+        {
+          type: "language",
+          code: "ko",
+          title: "한국어",
+        },
+        {
+          type: "language",
+          code: "zh",
+          title: "中文",
+        },
+        {
+          type: "language",
+          code: "es",
+          title: "Español",
+        },
+        {
+          type: "language",
+          code: "fr",
+          title: "Français",
+        },
+        {
+          type: "language",
+          code: "de",
+          title: "Deutsch",
+        },
+        
       ],
     },
   },
